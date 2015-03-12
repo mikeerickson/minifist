@@ -1,0 +1,10 @@
+{
+  "name": "minifist",
+  "version": "0.0.0",
+  "private": true,
+  "bin": "./cli.js",
+  "dependencies": {
+    "uglify-js": "^2.4.0"
+  },
+  "devDependencies": {}
+}
