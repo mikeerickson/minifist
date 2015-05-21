@@ -4,7 +4,7 @@ var writeFile = require('fs').writeFile
 var pathParser = require('path')
 var ujs = require('uglify-js')
 
-//# sourceMappingURL=data:application/json;base64,0ZG91dClcbiJdfQ==
+// Match against: //# sourceMappingURL=data:application/json;base64,0ZG91dClcbiJdfQ...==
 var RX_TAG = /^\s*\/(?:\/|\*)[@#]\s+sourceMappingURL=data:(?:application|text)\/json;(?:charset:\S+;)?base64,(.*)$/mg
 
 function extractSourceMap(content) {

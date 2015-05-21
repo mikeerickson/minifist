@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 var createReadStream = require('fs').createReadStream
-var createTransformStream = require('./')
+var createTransformStream = require('./index')
 var argv = process.argv.slice(2)
 var out, url, base, opt, file
 while (opt = argv.shift()) switch (opt) {
@@ -24,6 +24,7 @@ while (opt = argv.shift()) switch (opt) {
     file = argv.shift()
 }
 
+// Treat a file stream or stdin the same way. Yay, streams!
 (file ? createReadStream(file, 'utf8') : process.stdin)
   .pipe(createTransformStream({
     out: out, url: url, base: base
