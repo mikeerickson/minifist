@@ -1,7 +1,18 @@
 {
   "name": "minifist",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "description": "Compress & mangle a browserify bundle, and extract the source map to a separate file",
+  "author": "Cody Greene <cody@dudewoah.com>",
+  "keywords": [
+    "build",
+    "uglify",
+    "browserify",
+    "sourcemap"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/cody-greene/minifist.git"
+  },
   "bin": "./cli.js",
   "dependencies": {
     "uglify-js": "^2.4.0"
